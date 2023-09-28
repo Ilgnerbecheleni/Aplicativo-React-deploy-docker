@@ -1,6 +1,24 @@
-# React + Vite
+# React + Vite + Docker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este template visa ter um projeto padrão para iniciar um aplicativo react com vite para rodar em um container docker previamente configurado no dockerfile.
+
+Para configurar a porta vá no arquivo vite.config.js :
+
+`
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    watch: {
+      usePolling: true,
+    },
+    host: true, // Mapeia o host
+    strictPort: true,
+    port: 5173 // troque a porta favorita
+}})
+
+
+`
 
 Currently, two official plugins are available:
 
