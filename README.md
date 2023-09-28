@@ -4,7 +4,9 @@ Este template visa ter um projeto padrão para iniciar um aplicativo react com v
 
 Para configurar a porta vá no arquivo vite.config.js :
 
-`
+
+
+```
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
@@ -18,7 +20,7 @@ export default defineConfig({
 }})
 
 
-`
+```
 
 Currently, two official plugins are available:
 
